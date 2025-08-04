@@ -7,23 +7,23 @@ import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 import Footer from './components/Footer'
 
-function App() {
-  const [theme, setTheme] = useState('light') // Changed default to light
+const App = () => {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     if (theme === 'dark') {
-      document.documentElement.classList.add('dark')
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.remove('dark');
     }
-  }, [theme])
+  }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
+    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   return (
-    <div className="bg-white dark:bg-dark min-h-screen">
+    <div className="bg-white dark:bg-black transition-colors duration-300">
       <Navbar theme={theme} handleThemeSwitch={handleThemeSwitch} />
       <Hero />
       <About />

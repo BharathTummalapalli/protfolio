@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-6 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -15,7 +15,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="aspect-square relative rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
               <img
-                src="/images/profile.jpg"
+                src="/images/profile1.jpg"
                 alt="Bharath Tummalapalli"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -24,9 +24,9 @@ const About: React.FC = () => {
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+                {/* <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-medium">Frontend Development Enthusiast</p>
-                </div>
+                </div> */}
               </div>
             </div>
             
