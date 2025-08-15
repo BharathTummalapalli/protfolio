@@ -15,7 +15,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="aspect-square relative rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
               <img
-                src="public/images/profile1.jpg"
+                src="images/profile1.jpg"
                 alt="Bharath Tummalapalli"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -57,7 +57,7 @@ const About: React.FC = () => {
               </div>
               
               <a 
-                href="public/Bharath Resume.pdf"
+                href="dist\assets\Bharath Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg"
