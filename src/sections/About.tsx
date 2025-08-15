@@ -57,7 +57,7 @@ const About: React.FC = () => {
               </div>
               
               <a 
-                href="dist\assets\Bharath Resume.pdf"
+                href="dist/assets/Bharath_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg"
